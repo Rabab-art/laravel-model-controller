@@ -38,10 +38,12 @@
             <h5 class="card-title">{{$movie->title}}</h5>
             <h6 class="card-subtitle mb-2 text-muted">{{$movie->nationality }}</h6>
             <h2 class="card-subtitle mb-2 text-muted">{{$movie->date }}</h2>
-            @empty
-            <h2 class="text-center">Nessun film diponibile</h2>
-            @endforelse
         </div>
+        @empty
+        <h2 class="text-center">Nessun film diponibile</h2>
+    @endforelse
+
+
     </div>
     <script src="{{asset('js/app.js')}}"></script>
 </body>
